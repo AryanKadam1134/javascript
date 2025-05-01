@@ -6,6 +6,9 @@
 //     grade : 70,
 // }
 
+// console.log(student)
+// console.log(student.fullName)
+
 // const group ={
 //     fullName : "Tony Stark",
 //     age : 34,   
@@ -97,7 +100,7 @@
 // }
 
 
-//for - practice 2
+//for - practice 2   sum of numbers 1 to n
 // let sum,i,n;
 // sum=0;
 // i=1;
@@ -181,7 +184,6 @@
 // let gameNum,i;
 // gameNum=45;
 
-
 // do{
 //     i=prompt("guess the no.: ");
 //     if(i==gameNum){
@@ -192,10 +194,10 @@
 //     }
 // } while(i!==gameNum);
 
+
 // Another Method
 // let gameNum,i;
 // gameNum=45;
-
 
 // do{
 //     i=prompt("guess the no.: ");
@@ -238,12 +240,12 @@
 // let str = "Aryan Kadam ";
 // let str1 = "form CSE(AIML)";
 // let str2 = "Hello";
-// console.log(str.toUpperCase());
-// console.log(str1.slice(5,14))
-// console.log(str.concat(str1));
-// console.log(str2.replace("lo","p"));
-// console.log(str2.replaceAll("l", "p"));
-// console.log(str[3]);
+// console.log(str.toUpperCase()); //to Uppercase
+// console.log(str1.slice(5,14)); //to slice
+// console.log(str.concat(str1)); //to concat means to merge two strings
+// console.log(str2.replace("lo","p")); //to replace (what, with)
+// console.log(str2.replaceAll("l", "p")); //to replace all
+// console.log(str[3]); //
 // console.log(str.charAt(3));
 // str = str[0] + "w" + str.slice(1);
 // console.log(str);
@@ -262,7 +264,7 @@
 
 // Looping arrays
 
-// For loop
+// For loop to print all values
 // let arr = ["Aryan", "Raj", "Suyog", "Vansh", "Faiz", "Vitthal", "Niraj"];
 // let i = 0;
 
@@ -325,7 +327,7 @@
 
 // for(let val of arr){
 //     arr[i] = arr[i] - (arr[i]/10);
-//     i++;   
+//     i++;  
 // }
 // console.log(arr);
 
@@ -337,6 +339,8 @@
 // console.log(arr);
 
 // console.log(arr.push("Nishant"));    //pushed into the last
+
+// console.log(arr);
 
 // console.log(arr.pop()); //poped from the end
 
@@ -353,9 +357,9 @@
 
 // console.log(marvelHeros.concat(dcHeros,indianHeros));
 
-// marvelHeros.unshift("Spiderman");
+// marvelHeros.unshift("Spiderman"); //push to first
 // console.log(marvelHeros);
-// console.log(marvelHeros.shift());
+// console.log(marvelHeros.shift()); //pop form first
 
 
 
@@ -551,20 +555,20 @@
 
 
 //
-let arr = [];
-let n = prompt("Enter the no. of elements you want in an array:");
+// let arr = [];
+// let n = prompt("Enter the no. of elements you want in an array:");
 
-for(let i=1; i<=n; i++){
-    arr[i-1] = i;
-}
-console.log(arr);
+// for(let i=1; i<=n; i++){
+//     arr[i-1] = i;
+// }
+// console.log(arr);
 
-let sumOfArr = arr.reduce((prev, curr) => {
-    return prev+curr;
-})
-console.log(sumOfArr);
+// let sumOfArr = arr.reduce((prev, curr) => {
+//     return prev+curr;
+// })
+// console.log(sumOfArr);
 
-let mulOfArr = arr.reduce((prev, curr) => {
-    return prev*curr;
-})
-console.log(mulOfArr);
+// let mulOfArr = arr.reduce((prev, curr) => {
+//     return prev*curr;
+// })
+// console.log(mulOfArr);
