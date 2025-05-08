@@ -36,7 +36,6 @@ const object1 = { name: "John", age: 30 }; // Object
 const a = 1; // Number
 const b = 2; // Number
 const c = 3; // Number
-console.log(a, b, c); // Output: 1 2 3 (multiple variables)
-console.log(Array.of(a, b, c)); // Output: [1, 2, 3] (creates an array from multiple variables)
-
+// console.log(a, b, c); // Output: 1 2 3 (multiple variables)
+// console.log(Array.of(a, b, c)); // Output: [1, 2, 3] (creates an array from multiple variables)
 
