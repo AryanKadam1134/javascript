@@ -2,7 +2,8 @@ const marvelHeros = ["Iron Man", "Thor", "Hulk", "Black Widow", "Captain America
 const dcHeros = ["Superman", "Batman", "Wonder Woman", "Aquaman", "Flash"];
 
 // marvelHeros.push(dcHeros); // Adds dcHeros to the end of marvelHeros
-// console.log(marvelHeros); // Output
+// console.log(marvelHeros); // Output: ["
+
 // marvelHeros.concat(dcHeros); // Concatenates dcHeros to marvelHeros
 // console.log(marvelHeros.concat(dcHeros)) // Concatenates dcHeros to marvelHeros
 

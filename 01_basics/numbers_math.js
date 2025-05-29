@@ -27,6 +27,8 @@ const number = 122.86463;
 // console.log(Math.ceil(2.33)); // Output: 3 (rounded up to the nearest integer)
 // console.log(Math.sqrt(16)); // Output: 4 (square root of 16)
 // console.log(Math.pow(2, 3)); // Output: 8 (2 raised to the power of 3)
+// console.log(Math.min(1, 2, 3, 4, 5)); // Output: 1 (minimum value)
+// console.log(Math.max(1, 2, 3, 4, 5)); // Output: 5 (maximum value)
 // console.log(Math.random()); // Output: Random number between 0 and 1 (exclusive)
 
 
