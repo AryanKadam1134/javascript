@@ -119,11 +119,7 @@ console.log(returnMyValue("Hello"));
 
 
 
-
-
-
-
-
+// Function to print user details from an object
 
 const anyUser = {
     username : "John Doe",
