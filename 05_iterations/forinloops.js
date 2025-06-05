@@ -16,3 +16,9 @@ for (let key in myObject) {
 for (let key in myObject) {
     console.log(`${key}: ${myObject[key]}`); // Output: name: Aryan, age: 20, city: Pune
 }
+
+
+const myArray = ["IronMan", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye"];
+for (let index in myArray) {
+    console.log(myArray[index]); // Output: 0, 1, 2, 3, 4, 5
+}
