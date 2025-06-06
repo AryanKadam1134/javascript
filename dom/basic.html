@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            background-color: #02ff81;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+        <div class="child">Four</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent.children[1].innerHTML); // HTMLCollection of child elements
+
+    for (let i = 0; i <= parent.children.length; i++) {
+	    // console.log(parent.children[i].innerHTML);
+    }
+
+    // Styling the child element element
+    parent.children[0].style.color = 'red'
+
+    // Accessing the first child element
+    // console.log(parent.firstElementChild.innerHTML); // Outputs: One
+
+    // Accessing the last child element
+    // console.log(parent.lastElementChild.innerHTML); // Outputs: Four
+
+    // Accessing the parent element
+    const child = document.querySelector('.child');
+    // console.log(child.parentElement); // Outputs: <div class="parent">...</div>
+
+    // Accessing the next sibling element
+    // console.log(child.nextElementSibling.innerHTML); // Outputs: <div class="child">Two</div>
+
+    // Accessing the previous sibling element
+    // console.log(child.previousElementSibling); // Outputs: null (since 'One' is the first child)
+
+    // Accessing chile nodes
+    // console.log(parent.childNodes)
+</script>
+</html>

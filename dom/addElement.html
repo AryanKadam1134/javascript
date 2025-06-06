@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    const addElement = (list) => {
+        for (let i = 0; i < 5; i++) {
+            const newLi = document.createElement('li');
+            newLi.style.color = "green";
+            const newText = document.createTextNode(`${list}`);
+            newLi.appendChild(newText);
+            document.querySelector('ul').appendChild(newLi);
+        }  
+    }
+    addElement('Python');
+
+    // appendChild can only be used to append a single node, so we need to create the text node separately.
+    // The following code will not work as expected because appendChild returns the appended child, not the parent.
+    const addElement2 = (list) => {
+        document.querySelector('ul').appendChild(document.createElement('li').appendChild(document.createTextNode(`${list}`)));
+    }
+    addElement2('Java');
+
+    const addElement3 = (list) => {
+	    const newLi = document.createElement('li')
+	    newLi.appendChild(document.createTextNode(`${list}`));
+	    document.querySelector('ul').appendChild(newLi);
+    }
+    addElement3("TypeScript")
+
+    // edit example
+    const editElement = document.querySelector("li:first-child");
+    editElement.textContent = "Express";
+
+    // remove exapmple
+    const removeElement = document.querySelector("li:last-child");
+    removeElement.remove();
+
+</script>
+</html>
