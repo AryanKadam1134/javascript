@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg?cs=srgb&dl=pexels-pixabay-53977.jpg&fm=jpg" alt="owl"></li>
+            <li><img width="200px" id="fish" src="https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?cs=srgb&dl=pexels-crisdip-35358-128756.jpg&fm=jpg" alt="fish"></li>
+            <li><img width="200px" id="cheeta" src="https://i.pinimg.com/564x/f0/0f/5e/f00f5ec3a5e94282a5ebe222dc739d34.jpg" alt="cheeta"></li>
+            <li><img width="200px" id="zebra" src="https://www.treehugger.com/thmb/qFhPReYPPaVgTtHBOthYeMJVeZ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1043597638-49acd69677d7442588c1d8930d298a59.jpg" alt="zebra"></li>
+            <li><img width="200px" id="car" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/139585/harrier-ev-exterior-right-front-three-quarter-18.jpeg?isig=0&q=80" alt="car"></li>
+            <li><a id="google" href="https://www.google.com/" alt="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById("owl").onclick = function() {
+    //     alert("Owl clicked");
+    // }
+
+
+
+    // document.getElementById('owl').addEventListener('click', function(e) {
+    //     console.log(e);
+    //     alert("Owl clicked");
+    // });
+
+
+
+    // document.getElementById('owl').addEventListener('click', function(e) {
+    //     console.log(e.type);
+    //     console.log(e.timeStamp);
+    //     console.log(e.defaultPrevented);
+    //     console.log(e.target);
+    //     console.log(e.toElement);
+    //     console.log(e.srcElement);
+    //     console.log(e.currentTarget);
+    //     console.log(e.clientX);
+    //     console.log(e.clientY);
+    //     console.log(e.screenX);
+    //     console.log(e.screenY);
+    //     console.log(e.altKey);
+    //     console.log(e.ctrlKey);
+    //     console.log(e.shiftKey);
+    //     console.log(e.keyCode);
+    // });
+
+
+
+    // document.getElementById('images').addEventListener('click', function(e) {
+    //     console.log("Clicked inside UL");
+    // }, false); // flase means the event will bubble up, true means it will not bubble up
+    
+    // document.getElementById('owl').addEventListener('click', function(e) {
+    //     console.log("Owl clicked");
+    //     e.stopPropagation(); // This will stop the event from bubbling up to the parent elements
+    // }, false);
+
+    // document.getElementById('google').addEventListener('click', function(e) {
+    //     e.preventDefault() // This will prevent the default action of the link
+    // }, false);
+
+
+
+    document.querySelector('#images').addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default action if needed
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode;
+        // removeIt.remove();
+        if (e.target.tagName == 'IMG') {
+            removeIt.remove();
+        }
+    })
+</script>
+</html>
