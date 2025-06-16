@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Get Data</button>
+    <div class="data" style="margin: 10px; background-color: antiquewhite; padding: 10px;">
+    </div>
+</body>
+<script>
+    const button = document.querySelector("button");
+    const dataDiv = document.querySelector(".data");
+    const url = "https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    button.addEventListener("click", function() {
+        xhr.send();
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState)
+            if (xhr.readyState === 4) {
+                const response = JSON.parse(xhr.responseText);
+                dataDiv.innerHTML = `<img src="${response.avatar_url}"> <br>
+                <div>Name : ${response.name}</div> <br>
+                <div>Followers : ${response.followers}</div> <br>
+                <div>Location : ${response.location}</div> <br>`;
+            }
+        }
+        
+    });
+
+
+
+    
+</script>
+</html>
